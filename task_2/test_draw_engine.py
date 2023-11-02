@@ -4,13 +4,13 @@ import pytest
 from task_2.draw_engine import Circle, Triangle, Rectangle, Engine2D
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def engine():
     engi = Engine2D()
     return engi
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def shapes():
     circle = Circle((0, 1), 5)
     triangle = Triangle([(0, 0), (1, 1), (2, 0)])
