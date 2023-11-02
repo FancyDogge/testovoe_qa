@@ -4,7 +4,7 @@ import pytest
 from task_2.draw_engine import Circle, Triangle, Rectangle, Engine2D
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture()
 def engine():
     engi = Engine2D()
     return engi
